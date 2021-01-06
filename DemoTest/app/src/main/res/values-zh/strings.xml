@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">示例测试</string>
+    <string name="A">A队</string>
+    <string name="B">B队</string>
+    <string name="button_reset">重置</string>
+    <string name="button_undo">撤销</string>
+</resources>

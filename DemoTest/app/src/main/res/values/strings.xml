@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DemoTest</string>
+    <string name="app_version" translatable="false">1.0</string>
+    <string name="button_msg" translatable="false">Button</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="label" translatable="false">TextView</string>
+    <string name="icon" translatable="false">icon</string>
+    <string name="number" translatable="false">Welcome</string>
+    <string name="button_add" translatable="false">+1</string>
+    <string name="button_multiply" translatable="false">×2</string>
+    <string name="up" translatable="false">up</string>
+    <string name="down" translatable="false">down</string>
+    <string name="A">Team A</string>
+    <string name="B">Team B</string>
+    <string name="scoreA" translatable="false">0</string>
+    <string name="scoreB" translatable="false">0</string>
+    <string name="add_one" translatable="false">+1</string>
+    <string name="add_two" translatable="false">+2</string>
+    <string name="add_three" translatable="false">+3</string>
+    <string name="button_undo">undo</string>
+    <string name="button_reset">reset</string>
+    <string name="MY_DATA" translatable="false">MY_DATA</string>
+    <string name="MY_KEY" translatable="false">MY_KEY</string>
+</resources>

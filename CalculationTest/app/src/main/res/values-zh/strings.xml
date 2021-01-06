@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">计算测试</string>
+    <string name="button_back_to_title">返回</string>
+    <string name="button_clear">清空</string>
+    <string name="button_submit">确认</string>
+    <string name="correct_answer_message">正确！</string>
+    <string name="current_score">分数：%d</string>
+    <string name="dialog_negative_message">取消</string>
+    <string name="dialog_positive_message">确定</string>
+    <string name="highest_score_record" translatable="false">最高纪录：%d</string>
+    <string name="input_indicator">你的答案：</string>
+    <string name="lose_message">你输了</string>
+    <string name="lose_score_message">你的得分：%d</string>
+    <string name="quit_dialog_title">你确认要退出吗？</string>
+    <string name="title_button_message">进入测试</string>
+    <string name="title_message">计算测试</string>
+    <string name="win_message">你赢了！</string>
+    <string name="win_score_message">新的记录：%d</string>
+    <string name="win_fragment_name">获胜</string>
+    <string name="title_fragment_name">测试</string>
+    <string name="lose_fragment_name">失败</string>
+    <string name="question_fragment_name">问题</string>
+</resources>

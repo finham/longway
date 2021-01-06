@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.finham.navigationdemo.HomeFragment"
+        android:label="爱你"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right">
+            <argument
+                android:name="name"
+                android:defaultValue="Tom" />
+        </action>
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="Rose" />
+        <action
+            android:id="@+id/action_homeFragment_to_addSubtractFragment"
+            app:destination="@id/addSubtractFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.finham.navigationdemo.DetailFragment"
+        android:label="爱我"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="Jack" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSubtractFragment"
+        android:name="com.finham.navigationdemo.AddSubtractFragment"
+        android:label="fragment_add_subtract"
+        tools:layout="@layout/fragment_add_subtract" >
+        <action
+            android:id="@+id/action_addSubtractFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

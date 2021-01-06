@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViewModelWithSharedPreference</string>
+    <string name="add">+1</string>
+    <string name="minus">-1</string>
+    <string name="key">DATA_KEY</string>
+    <string name="sp">SP_NAME</string>
+</resources>

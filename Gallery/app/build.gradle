@@ -1,0 +1,62 @@
+import kotlin.Experimental
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.finham.gallery"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    androidExtensions{
+        experimental = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    //下拉刷新
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    //ViewModel需要导入库吗。。哦哦，这个是lifecycle-extensions中的一小部分
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    //导航组件库
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0-alpha02'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0-alpha02'
+
+    //用来处理Http连接
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //序列化
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //为图片增加闪光效果
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+    //支持图片的缩放。我之前在慕课网好像有见过教这个的视频= =。再说吧，有现成库可以用当然最好，原理也可以看视频或者去看源码
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
+}
